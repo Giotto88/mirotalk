@@ -19,6 +19,12 @@ Nota2: I file modificati per ora sono:
 <hr />
 
 <p align="center">
+    <a href="https://p2p.mirotalk.com"><img src="./readme-src/new_landing.png"></a>
+</p>
+
+<hr />
+
+<p align="center">
     <a href="https://p2p.mirotalk.com"><img src="public/images/mirotalk-header.gif"></a>
 </p>
 
