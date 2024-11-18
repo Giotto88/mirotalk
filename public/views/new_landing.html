@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miro Talk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @media (min-width: 1500px) {
+            .MyContainer {
+                padding: 0 25em;
+            }
+        }
+        @media (max-width: 620px) {
+            .MyContainer {
+                flex: 0 0 auto;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="d-flex align-items-center justify-content-between px-2" style="max-height: 48px;">
+        <!-- SX -->
+        <div class="d-flex align-items-center">
+            <svg style="padding: 12px;" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+            <img src="../../readme-src/miro_collab_logo_1a2.png" alt="Logo" height="40px">
+            <p class="ms-2 m-0" style="font-weight: 300;font-size: 1.5em;">Miro Talk</p>
+        </div>
+        <!-- DX -->
+        <div class="d-flex align-items-center">
+            <div style="display: table-cell; vertical-align: middle; padding: 8px;">
+                <a>18:04</a><a> • </a><a>lun 18 nov</a>
+            </div>
+            <svg style="padding: 12px;" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
+                <path d="M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/>
+            </svg>
+            <svg style="padding: 12px;" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+            </svg>
+            <div class="border-secondary border-start border-2 border-opacity-75" style="height: calc((48px/100)*75);"></div>
+            <div class="flex-shrink-0 p-2">
+                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded">
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="MyContainer">
+        <div class="px-5 py-4  text-center d-flex flex-column align-items-center">
+            <!-- <hr class="w-75"> -->
+            <img class="d-block mx-auto mb-2" src="../../readme-src/miro_collab_logo_1a2.png" alt="" height="72">
+            <h1 class="display-5 fw-light text-body-emphasis" style="
+                font-family: Google Sans,Roboto,Arial,sans-serif;
+        font-size: 2.812rem;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 3.25rem;
+        color: var(--gm3-sys-color-on-surface,#1f1f1f);
+        padding-bottom: .5rem;
+        margin: 0;
+            ">Videochiamate e riunioni per tutti</h1>
+            <div class="col-lg mx-auto">
+                <p class="lead mb-4">Connettiti, collabora e festeggia ovunque tu sia con Miro Talk</p>
+                <div style="display: flex;flex-direction: row;justify-content: center;max-height: 48px;">
+                    <button type="button" class="me-2 btn btn-primary btn px-4 gap-3" style="max-width: fit-content;" ><i class="bi bi-camera-video"></i> Nuova riunione</button>
+                    <!-- // TODO: onclick add focus to input -->
+                    <div class="me-2 form-control form-control-sm w-auto d-flex align-items-center" onfocus="">
+                        <span><i class="bi bi-keyboard-fill"></i></span>
+                        <input type="text" class="border-0 form-control" name="" id="" placeholder="ABCD-0000-0000-0000">
+                    </div>
+                    <input type="button" class="btn btn-sm btn-outline-secondary" value="Partecipa" disabled>
+                </div>
+            </div>
+            <br>
+            <hr class="w-75">
+        </div>
+    </div>
+    
+
+
+</body>
+</html>

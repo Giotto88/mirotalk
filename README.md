@@ -1,12 +1,8 @@
-<h1 align="center">MiroTalk P2P</h1>
-
-<br />
+<h1 align="center">MiroTalk P2P - Meet Themed</h1>
 
 <div align="center">
-
-<a href="">[![Author](https://img.shields.io/badge/Author-miroslav-brightgreen.svg)](https://www.linkedin.com/in/miroslav-pejic-976a07101/)</a>
-<a href="">![License: AGPLv3](https://img.shields.io/badge/License-AGPLv3-blue.svg)</a>
-<a href="">[![Community](https://img.shields.io/badge/Community-forum-pink.svg)](https://discord.gg/rgGYfeYW3N)</a>
+    <img src="./readme-src/miro_collab_logo_1a1.svg" width="160px">
+    <p> Mirotalk collab GMeet </p> 
 
 </div>
 
@@ -14,9 +10,11 @@
 
 <hr />
 
-<p align="center">
-    <a href="https://p2p.mirotalk.com">Explore MiroTalk P2P</a>
-</p>
+Nota1: Il tema è stato realizzato con BootstrapCSS v5.3 (è veloce per creare template al volo)
+
+Nota2: I file modificati per ora sono:
+
+- [Landing.html](./public/views/new_landing.html)
 
 <hr />
 
@@ -26,11 +24,7 @@
 
 <hr />
 
-<p align="center">
-    Join our community for questions, discussions, and support on <a href="https://discord.gg/rgGYfeYW3N">Discord</a>
-</p>
 
-<hr />
 
 <details>
 <summary>Features</summary>
@@ -75,13 +69,7 @@
 
 </details>
 
-<details>
-<summary>About</summary>
 
-<br>
-
--   [Presentation](https://www.canva.com/design/DAE693uLOIU/view)
--   [Video Overview](https://www.youtube.com/watch?v=_IVn2aINYww)
 
 </details>
 
@@ -181,36 +169,6 @@ $ npm start
 
 </details>
 
-<details open>
-<summary>Docker</summary>
-
-<br/>
-
-![docker](public/images/docker.png)
-
--   Repository [docker hub](https://hub.docker.com/r/mirotalk/p2p)
--   Install [docker engine](https://docs.docker.com/engine/install/) and [docker compose](https://docs.docker.com/compose/install/)
-
-```bash
-# clone this repo
-$ git clone https://github.com/miroslavpejic85/mirotalk.git
-# go to mirotalk dir
-$ cd mirotalk
-# copy .env.template to .env (edit it according to your needs)
-$ cp .env.template .env
-# Copy docker-compose.template.yml in docker-compose.yml (edit it according to your needs)
-$ cp docker-compose.template.yml docker-compose.yml
-# Get official image from Docker Hub
-$ docker pull mirotalk/p2p:latest
-# create and start containers
-$ docker-compose up # -d
-# to stop and remove resources
-$ docker-compose down
-```
-
--   Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-</details>
 
 <details>
 <summary>Documentations</summary>
@@ -250,52 +208,6 @@ $ curl -X POST "https://mirotalk.up.railway.app/api/v1/join" -H "authorization: 
 
 </details>
 
-<details open>
-<summary>Hetzner & Contabo</summary>
-
-<br/>
-
-[![Hetzner](public/sponsors/Hetzner.png)](https://hetzner.cloud/?ref=XdRifCzCK3bn)
-
-This application is running for `demonstration purposes` on [Hetzner](https://www.hetzner.com/), one of `the best` [cloud providers](https://www.hetzner.com/cloud) and [dedicated root servers](https://www.hetzner.com/dedicated-rootserver).
-
----
-
-Use [my personal link](https://hetzner.cloud/?ref=XdRifCzCK3bn) to receive `€⁠20 IN CLOUD CREDITS`.
-
----
-
-[![Contabo](public/advertisers/ContaboLogo.png)](https://www.dpbolvw.net/click-101027391-14462707)
-
-Experience also top-tier German web hosting – dedicated servers, VPS, and web hosting at `unbeatable prices`. Reliable, secure, and backed by 24/7 support. [Explore now here](https://www.dpbolvw.net/click-101027391-14462707)
-
----
-
-To set up your own instance of `MiroTalk P2P` on a dedicated cloud server, please refer to our comprehensive [self-hosting documentation](https://docs.mirotalk.com/mirotalk-p2p/self-hosting/). This guide will walk you through the process step by step, ensuring a smooth and successful deployment.
-
-</details>
-
-<details>
-<summary>Live Demos</summary>
-
-<br/>
-
-<a target="_blank" href="https://p2p.mirotalk.com"><img src="public/sponsors/Hetzner.png" style="width: 220px;"></a>
-
-https://p2p.mirotalk.com
-
-[![hetzner-qr](public/images/mirotalk-hetzner-qr.png)](https://p2p.mirotalk.com)
-
-<br>
-
-<a target="_blank" href="https://railway.app/new/template/mirotalk?referralCode=mirotalk"><img src="https://railway.app/button.svg" style="width: 220px;"></a>
-
-https://mirotalk.up.railway.app
-
-[![railway-qr](public/images/mirotalk-railway-qr.png)](https://mirotalk.up.railway.app)
-
-</details>
-
 <details>
 <summary>Security</summary>
 
@@ -310,102 +222,9 @@ For `Security` concerning, please follow [this documentation](./SECURITY.md).
 
 <br/>
 
--   ianramzy (html [template](https://cruip.com/demos/neon/))
+-   ianramzy (html)
 -   vasanthv (webrtc-logic)
 -   fabric.js (whiteboard)
 
 </details>
 
-<details>
-<summary>Contributing</summary>
-
-<br/>
-
--   Contributions are welcome and greatly appreciated!
--   Just run before `npm run lint`
-
-</details>
-
-<details>
-<summary>License</summary>
-
-<br/>
-
-[![AGPLv3](public/images/AGPLv3.png)](LICENSE)
-
-MiroTalk P2P is free and open-source under the terms of AGPLv3 (GNU Affero General Public License v3.0). Please `respect the license conditions`, In particular `modifications need to be free as well and made available to the public`. Get a quick overview of the license at [Choose an open source license](https://choosealicense.com/licenses/agpl-3.0/).
-
-To obtain a [MiroTalk P2P license](https://docs.mirotalk.com/license/licensing-options/) with terms different from the AGPLv3, you can conveniently make your [purchase on CodeCanyon](https://codecanyon.net/item/mirotalk-p2p-webrtc-realtime-video-conferences/38376661). This allows you to tailor the licensing conditions to better suit your specific requirements.
-
-</details>
-
-<details open>
-<summary>Support the project</summary>
-
-<br/>
-
-Do you find MiroTalk P2P indispensable for your needs? Join us in supporting this transformative project by [becoming a backer or sponsor](https://github.com/sponsors/miroslavpejic85). By doing so, not only will your logo prominently feature here, but you'll also drive the growth and sustainability of MiroTalk P2P. Your support is vital in ensuring that this valuable platform continues to thrive and remain accessible for all. Make an impact – back MiroTalk P2P today and be part of this exciting journey!
-
-|                                                                                   |                                                                                        |
-| --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| [![BroadcastX](public/sponsors/BroadcastX.png)](https://broadcastx.de/)           | [![Hetzner](public/sponsors/HetznerLogo.png)](https://hetzner.cloud/?ref=XdRifCzCK3bn) |
-| [![LuvLounge](public/sponsors/LuvLounge.png)](https://luvlounge.ca)               | [![QuestionPro](public/sponsors/QuestionPro.png)](https://www.questionpro.com)         |
-| [![BrowserStack](public/sponsors/BrowserStack.png)](https://www.browserstack.com) | [![CrystalSound](public/sponsors/CrystalSound.png)](https://crystalsound.ai)           |
-| [![Cloudron](public/sponsors/Cloudron.png)](https://cloudron.io)                  | [![Kiquix](public/sponsors/KiquixLogo.png)](https://kiquix.com)                        |
-
-</details>
-
-<details open>
-<summary>Advertisers</summary>
-
----
-
-[![Contabo](public/advertisers/ContaboLogo.png)](https://www.dpbolvw.net/click-101027391-14462707)
-
----
-
-</details>
-
-## Diving into Additional MiroTalk Projects:
-
-<details>
-<summary>MiroTalk SFU</summary>
-
-<br>
-
-Try also [MiroTalk SFU](https://github.com/miroslavpejic85/mirotalksfu) `selective forwarding unit` real-time video conferences, optimized for large groups. `Unlimited time, unlimited concurrent rooms` each having 8+ participants, up to ~ 100 per single CPU.
-
-</details>
-
-<details>
-<summary>MiroTalk C2C</summary>
-
-<br>
-
-Try also [MiroTalk C2C](https://github.com/miroslavpejic85/mirotalkc2c) `peer to peer` real-time video conferences, optimized for cam 2 cam. `Unlimited time, unlimited concurrent rooms` each having 2 participants.
-
-</details>
-
-<details>
-<summary>MiroTalk BRO</summary>
-
-<br>
-
-Try also [MiroTalk BRO](https://github.com/miroslavpejic85/mirotalkbro) `Live broadcast` (peer to peer) live video, audio and screen stream to all connected users (viewers). `Unlimited time, unlimited concurrent rooms` each having a broadcast and many viewers.
-
-</details>
-
-<details>
-<summary>MiroTalk WEB</summary>
-
-<br>
-
-Try also [MiroTalk WEB](https://github.com/miroslavpejic85/mirotalkwebrtc) a platform that allows for the management of an `unlimited number of users`. Each user must register with their email, username, and password, after which they gain access to their `personal dashboard`. Within the dashboard, users can `manage their rooms and schedule meetings` using the desired version of MiroTalk on a specified date and time. Invitations to these meetings can be sent via email, shared through the web browser, or sent via SMS.
-
-</details>
-
----
-
-This project is tested with [BrowserStack](https://www.browserstack.com).
-
----
