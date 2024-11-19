@@ -359,7 +359,7 @@ const views = {
     client: path.join(__dirname, '../../', 'public/views/client.html'),
     landing: path.join(__dirname, '../../', 'public/views/landing.html'),
     login: path.join(__dirname, '../../', 'public/views/login.html'),
-    newCall: path.join(__dirname, '../../', 'public/views/newcall.html'),
+    newCall: path.join(__dirname, '../../', 'public/views/landing.html'),
     notFound: path.join(__dirname, '../../', 'public/views/404.html'),
     privacy: path.join(__dirname, '../../', 'public/views/privacy.html'),
     stunTurn: path.join(__dirname, '../../', 'public/views/testStunTurn.html'),
