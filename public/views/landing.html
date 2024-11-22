@@ -48,7 +48,7 @@
         <!-- DX -->
         <div class="d-flex align-items-center">
             <div style="display: table-cell; vertical-align: middle; padding: 8px;">
-                <a>18:04</a><a> • </a><a>lun 18 nov</a>
+                <a id="clock">18:04</a><a> • </a><a id="date">lun 18 nov</a>
             </div>
             <svg style="padding: 12px;" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
                 <path d="M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/>
@@ -71,18 +71,18 @@
             <img class="d-block mx-auto mb-2" src="../images/miro_collab_logo_1a2.png" alt="" height="72">
             <h1 class="display-5 fw-light text-body-emphasis" style="
                 font-family: Google Sans,Roboto,Arial,sans-serif;
-        font-size: 2.812rem;
-        font-weight: 400;
-        letter-spacing: 0;
-        line-height: 3.25rem;
-        color: var(--gm3-sys-color-on-surface,#1f1f1f);
-        padding-bottom: .5rem;
-        margin: 0;
+                font-size: 2.812rem;
+                font-weight: 400;
+                letter-spacing: 0;
+                line-height: 3.25rem;
+                color: var(--gm3-sys-color-on-surface,#1f1f1f);
+                padding-bottom: .5rem;
+                margin: 0;
             ">Videochiamate e riunioni per tutti</h1>
             <div class="col-lg mx-auto">
                 <p class="lead mb-4">Connettiti, collabora e festeggia ovunque tu sia con Miro Talk</p>
                 <div style="display: flex;flex-direction: row;justify-content: center;max-height: 48px;">
-                    <button id="genRoomButton" type="button" class="me-2 btn btn-primary btn px-4 gap-3" style="max-width: fit-content;" ><i class="bi bi-camera-video"></i> Nuova riunione</button>
+                    <button id="genRoomButton" type="button" class="me-2 btn btn-primary btn px-4 gap-3" style="max-width: fit-content;" ><i class="bi bi-camera-video"></i> Riunione rapida</button>
                     <!-- // TODO: onclick add focus to input -->
                     <div class="me-2 form-control form-control-sm w-auto d-flex align-items-center" onfocus="">
                         <span><i class="bi bi-keyboard-fill"></i></span>
@@ -103,6 +103,36 @@
     
     <!-- Scripts -->
     <script defer src="../js/common.js"></script>
+    <script>
+
+    function updateTime() {
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+
+        const timeElement = document.getElementById('clock');
+        timeElement.textContent = `${hours}:${minutes}`;
+    }
+
+    updateTime();
+    setInterval(updateTime, 60000); // update every 60 seconds (1 minute)
+
+    function updateDate() {
+        const now = new Date();
+        const day = now.getDate();
+        const month = now.getMonth();
+        const dayOfWeek = now.getDay();
+
+        const daysOfWeek = ['dom', 'lun', 'mar', 'mer', 'gio', 'ven', 'sab'];
+        const months = ['gen', 'feb', 'mar', 'apr', 'mag', 'giu', 'lug', 'ago', 'set', 'ott', 'nov', 'dic'];
+
+        const dateElement = document.getElementById('date');
+        dateElement.textContent = `${daysOfWeek[dayOfWeek]} ${day} ${months[month]}`;
+    }
+
+
+
+    </script>
 
 </body>
 </html>
