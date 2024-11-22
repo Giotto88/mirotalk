@@ -361,8 +361,10 @@ const views = {
     login: path.join(__dirname, '../../', 'public/views/login.html'),
     newCall: path.join(__dirname, '../../', 'public/views/landing.html'),
     notFound: path.join(__dirname, '../../', 'public/views/404.html'),
-    privacy: path.join(__dirname, '../../', 'public/views/privacy.html'),
+    privacy: path.join(__dirname, '../../', 'public/views/pepc/pepc.html'),
     stunTurn: path.join(__dirname, '../../', 'public/views/testStunTurn.html'),
+    // TEMPORARY - for testing
+    preJoin: path.join(__dirname, '../../', 'public/views/preJoin.html'),
 };
 
 const channels = {}; // collect channels
