@@ -365,6 +365,7 @@ const views = {
     stunTurn: path.join(__dirname, '../../', 'public/views/testStunTurn.html'),
     // TEMPORARY - for testing
     preJoin: path.join(__dirname, '../../', 'public/views/preJoin.html'),
+    pepcTest: path.join(__dirname, '../../', 'public/views/pepc/pepc.html'),
 };
 
 const channels = {}; // collect channels

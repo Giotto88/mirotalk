@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.6" />
+    <meta http-equiv="origin-trial" content="ArqsmEQWQdYr+74UdOSYUcMhNxYXOo9roFBG3jxB0BPZi0nW1iddcfbKb8oW9Hlo+i0NRAxoSKhsuYMM3zhdOQwAAABaeyJvcmlnaW4iOiJodHRwczovL3Blcm1pc3Npb24uc2l0ZTo0NDMiLCJmZWF0dXJlIjoiUGVybWlzc2lvbkVsZW1lbnQiLCJleHBpcnkiOjE3Mzk5MjMxOTl9">
+    <title>permission.site (permission element)</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="app-icon.png" />
+    <style>
+      /* Light material design boilerplate. */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #EEEEEE;
+}
+
+permission {
+  background: #def0ff;
+  border: solid #005763;  
+  border-radius: 5px;
+  width: 400px;
+  padding: 0.5em;
+  margin: 10px 10px;
+  display: block;
+}
+    </style>
+  </head>
+  <body>  
+    <div class="before"></div>
+    <div class="content">      
+      <div><permission id="camera" type="camera"></div>
+      <div><permission id="microphone" type="microphone"></div>
+      <div><permission id="camera-microphone" type="camera microphone"></div>
+      <div><permission id="geolocation" type="geolocation"></div>
+      <div class="demo-instructions">
+        <h2>👩🏻‍💻 Demo instructions</h2>
+        You will see empty rectangles unless this browser implementes basic support for the &lt;permission&gt;&nbsp;element. In Chrome M121 or later, follow these instructions to enable experimental support:
+        <ul>
+          <li>Shut down the browser process.</li>
+          <li>
+            Restart the browser with these command line flag:
+            <pre>--enable-features=PermissionElement</pre>
+          </li>
+          <li>
+            Ensure the flags actually took effect by verifying they appear on:
+            <pre>chrome://version</pre>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="github-fork-ribbon-wrapper right">
+      <div class="github-fork-ribbon">
+        <a href="https://github.com/chromium/permission.site">On GitHub</a>
+      </div>
+    </div>
+    <link rel="stylesheet" href="third_party/github.css" />
+    <script>
+      let el = document.createElement("permission");
+      if (el instanceof HTMLUnknownElement) {
+      // PEPC not supported
+      console.log("PEPC not supported");
+      } else {
+      // PEPC supported
+      console.log("PEPC supported");
+      }
+  
+      if (typeof HTMLPermissionElement === 'function') {
+      // PEPC supported
+      console.log("PEPC supported");
+      } else {
+      // PEPC not supported
+      console.log("PEPC not supported");
+      }
+  </script>
+  </body>
+</html>
