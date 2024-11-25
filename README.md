@@ -15,12 +15,18 @@ Nota1: Il tema è stato realizzato con BootstrapCSS v5.3 (è veloce per creare t
 Nota2: I file modificati per ora sono:
 
 - [Landing.html](./public/views/new_landing.html)
+- [PreJoin.html](./public/views/preJoin.html)
 
 <hr />
 
 <p align="center">
     <a href="https://p2p.mirotalk.com"><img src="./readme-src/new_landing.png"></a>
 </p>
+
+<p align="center">
+    <a href="https://p2p.mirotalk.com"><img src="./readme-src/preJoin.png"></a>
+</p>
+
 
 <hr />
 
