@@ -62,6 +62,10 @@
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
+
+                /* Other shared CSS */
+                max-width: 1263px;
+                height: calc(100% - 5rem);
             }
 
             .hide {
@@ -83,11 +87,10 @@
         
 
         <!-- 1 Big 5 small on right -->
-        <div id="usergrid-one-to-five-container" class="legacy-center hide" style="
+        <div id="usergrid-one-to-five-container" class="legacy-center " style="
             display: inline-flex;
             width: 100%;
-            max-width: 1263px;
-            height: calc(100% - 64px);
+
             padding: 16px;
             background-color: lightcoral;
             border: 2px solid red;">
@@ -142,8 +145,7 @@
         <!-- 1 big 1 float small -->
         <div id="usergrid-one-to-half-container" class="legacy-center hide" style="
             width: 100%;
-            max-width: 1263px;
-            height: calc(100% - 64px);
+
             padding: 16px;
             background-color: lightcoral;
             border: 2px solid red;">
@@ -173,8 +175,7 @@
         <!-- LEGACY - MIRO LAYOUT -->
         <div id="usergrid-one-to-one-container" class="legacy-center hide" style="
             width: 100%;
-            max-width: 1263px;
-            height: calc(100% - 64px);
+
             padding: 16px;
             
             display: flex;
@@ -211,8 +212,7 @@
         <!-- 1:1 many grid -->
         <div id="usergrid-many-grid-container" class="legacy-center hide" style="
             width: 100%;
-            max-width: 1263px;
-            height: calc(100% - 64px);
+
             padding: 16px;
             
             display: grid;
@@ -269,8 +269,7 @@
         <!-- 1:1 many flex -->
         <div id="usergrid-many-flex-container" class="legacy-center hide" style="
             width: 100%;
-            max-width: 1263px;
-            height: calc(100% - 64px);
+
             padding: 16px;
             
             display: flex;
@@ -323,19 +322,204 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-            height: 64px;
+            height: calc(5rem - 2px);
             background-color: plum;
             border: 2px solid purple;
+
             display: flex;
             justify-content: space-between;
-            align-items: center;">
+            align-items: center;
+            text-align: center;
+            white-space: nowrap;
+            z-index: 100;
+            ">
 
-            <a>a</a>
-            <a><button class="btn btn-primary" onclick="ChangeLayout()">ChangeLayout</button></a>
-            <a>c</a>
+            <div style="display: flex;
+                align-items: center;
+                margin-left: .75rem;
+                flex: 1 1 25%;
+                overflow: hidden;
+                text-align: start;
+                text-overflow: ellipsis;
+            ">
 
+                <span id="clock" style="
+                    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+                    line-height: 1.5rem;
+                    font-size: 1rem;
+                    letter-spacing: .00625em;
+                    font-weight: 500;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 .75rem;
+                ">9:43</span>
+                <!-- #dadce0 -->
+                <div style="align-self: center;border-left: 1px solid currentColor; height: 1rem;"></div>
+                <span style="
+                    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+                    line-height: 1.5rem;
+                    font-size: 1rem;
+                    letter-spacing: .00625em;
+                    font-weight: 500;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 .75rem;
+                ">aaa-aaa-aaa</span>
+
+            </div>
+
+            <div style="
+                width: 100%;
+                flex: 1 1 25%;
+                display: grid;
+                grid-auto-flow: column;
+                padding: 0 6px;
+                grid-column-gap: 12px;
+            ">
+                <button class="btn text-light"
+                style="
+                display: inline-block;
+                max-width: 56px;
+                max-height: 48px;
+                background-color: #f9dedc;
+                border-radius: 12px;
+                border: none;
+                padding: 12px 16px;
+                ">
+                <span style="display: block;width: 24px;height: 24px;color: #601410;">
+                    <i class="bi bi-mic-mute-fill"></i>
+                </span>
+                </button>
+                <button class="btn text-light"
+                style="
+                display: inline-block;
+                max-width: 56px;
+                max-height: 48px;
+                background-color: #f9dedc;
+                border-radius: 12px;
+                border: none;
+                padding: 12px 16px;
+                ">
+                <span style="display: block;width: 24px;height: 24px;color: #601410;">
+                    <i class="bi bi-camera-video-off-fill"></i>
+                </span>
+                </button>
+<!-- 
+                <button class="btn text-light"
+                    style="
+                    display: inline-block;
+                    max-width: 56px;
+                    max-height: 48px;
+                    background-color: #333537;
+                    border-radius: 9999px;
+                    border: none;
+                    padding: 12px 16px;
+                    ">
+                    <span style="display: block;width: 24px;height: 24px;">
+                        <i class="bi bi-badge-cc-fill"></i>
+                    </span>
+                </button> -->
+                <button class="btn text-light"
+                style="
+                display: inline-block;
+                max-width: 56px;
+                max-height: 48px;
+                background-color: #333537;
+                border-radius: 9999px;
+                border: none;
+                padding: 12px 16px;
+                ">
+                <span style="display: block;width: 24px;height: 24px;">
+                    <i class="bi bi-chat-left-text"></i>
+                </span>
+                </button>
+                <button class="btn text-light"
+                    style="
+                    display: inline-block;
+                    max-width: 56px;
+                    max-height: 48px;
+                    background-color: #333537;
+                    border-radius: 9999px;
+                    border: none;
+                    padding: 12px 16px;
+                    ">
+                    <span style="display: block;width: 24px;height: 24px;">
+                        <i class="bi bi-cast"></i>
+                    </span>
+                </button>
+                <button class="btn text-light"
+                style="
+                display: inline-block;
+                max-width: 56px;
+                max-height: 48px;
+                background-color: #333537;
+                border-radius: 9999px;
+                border: none;
+                padding: 12px 16px;
+                ">
+                <span style="display: block;width: 24px;height: 24px;">
+                    <i class="bi bi-person-raised-hand"></i>
+                </span>
+                </button>
+
+                <button class="btn text-light"
+                    style="
+                    background-color: #333537;
+                    border-radius: 9999px;
+                    border: none;
+                    height: 48px;
+                    ">
+                        <i class="bi bi-three-dots-vertical"></i>
+                </button>
+
+                <button class="btn text-light"
+                style="
+                height: 48px;
+                padding: 0px 36px;
+                color: white;
+                background-color: #dc362e;
+                border-radius: 9999px;
+                border: none;
+                ">
+                <div>
+                    <i class="bi bi-telephone-x-fill"></i>
+                </div>
+                </button>
+            </div>
+            
+            <div style="
+                display: flex;
+                align-items: center;
+                margin-right: calc(.75rem * 2);
+                flex: 1 1 25%;
+                overflow: hidden;
+                text-align: end;
+                justify-content: flex-end;
+                text-overflow: ellipsis;
+                gap: 6px;
+                ">
+
+                <button class="btn text-light" style="background-color: #333537;"><i class="bi bi-info-circle"></i></button>
+                <button class="btn text-light" style="background-color: #333537;"><i class="bi bi-people"></i></button>
+                <button class="btn btn-primary" onclick="ChangeLayout()"><i class="bi bi-columns-gap"></i></button>
+                <div class="border border-end border-0" style="align-self: center;height: 1rem;border-color: currentColor !important;"></div>
+                <button class="btn text-light" style="background-color: #333537;"><i class="bi bi-wifi"></i></button>
+
+                <!--  -->
+            </div>
         </div>
 
+        <!-- <button class="btn text-light"
+        style="
+        display: inline-block;
+        max-width: 56px;
+        max-height: 48px;
+        background-color: #333537;
+        border-radius: 9999px;
+        border: none;
+        padding: 12px 16px;
+        ">
+        </button> -->
 
 
 
@@ -358,6 +542,21 @@
 
                 document.getElementById(currentLayout).classList.remove("hide");
             }
+
+            // ---------------------------------------------------------------------
+            // ---------------------------------------------------------------------
+
+            function updateTime() {
+                const now = new Date();
+                const hours = now.getHours();
+                const minutes = now.getMinutes();
+
+                const timeElement = document.getElementById('clock');
+                timeElement.textContent = `${hours}:${minutes}`;
+            }
+
+            updateTime();
+            setInterval(updateTime, 60000); // update every 60 seconds (1 minute)
 
         </script>
     </body>
