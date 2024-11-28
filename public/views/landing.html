@@ -20,6 +20,15 @@
     <!-- xss -->
     <script src="https://cdn.jsdelivr.net/npm/xss/dist/xss.min.js"></script>
     <style>
+        html, body {
+            height: 100%;
+            /* margin: 0; */
+            /* padding: 0; */
+            /* font-family: 'Roboto', sans-serif; */
+        }
+        .only-big-screen {
+            display: none;
+        }
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         @media (min-width: 1500px) {
             .MyContainer {
@@ -29,6 +38,24 @@
         @media (max-width: 620px) {
             .MyContainer {
                 flex: 0 0 auto;
+            }
+        }
+        @media (min-height: 900px) {
+            html, body {
+                height: calc(100% - 48px);
+            }
+            .only-big-screen {
+                display: block;
+            }
+            .only-small-screen {
+                display: none;
+            }
+            .MyContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
             }
         }
     </style>
@@ -63,9 +90,10 @@
             </div>
         </div>
     </header>
-
+    
     <!-- Main -->
     <div class="MyContainer">
+        <hr class="w-75 only-big-screen">
         <div class="px-5 py-4  text-center d-flex flex-column align-items-center">
             <!-- <hr class="w-75"> -->
             <img class="d-block mx-auto mb-2" src="../images/miro_collab_logo_1a2.png" alt="" height="72">
@@ -96,9 +124,10 @@
                     <p class="me-2">Your recent room:</p>
                     <a class="text-decoration-none" id="lastRoom"></a>
                 </div>
-            <br>
-            <hr class="w-75">
+                <br>
+                <hr class="w-75 only-small-screen" >
         </div>
+        <hr class="w-75 only-big-screen">
     </div>
     
     <!-- Scripts -->
