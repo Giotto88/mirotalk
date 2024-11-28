@@ -12,11 +12,23 @@
 
 Nota1: Il tema è stato realizzato con BootstrapCSS v5.3 (è veloce per creare template al volo)
 
-Nota2: I file modificati per ora sono:
+Nota2: I file modificati/aggiunti per ora sono:
 
 - [Landing.html](./public/views/new_landing.html)
 - [PreJoin.html](./public/views/preJoin.html)
-- new_c_lient.html (Under dev)
+- [404.html](./public/views/404.html)
+- new_client.html (Under dev)
+
+File originali modificati
+- [x] 404.html
+- [ ] about.html
+- [ ] client.html
+- [x] landing.html
+- [ ] login.html
+- [ ] maintenance.html
+- [x] newcall.html -> [landing](./public/views/landing.html)
+- [ ] privacy.html
+- [ ] testStunTurn.html
 
 <hr />
 
@@ -30,6 +42,11 @@ Nota2: I file modificati per ora sono:
 
 <p align="center">
     <a href="https://p2p.mirotalk.com"><img src="./readme-src/new_client.png"></a>
+    ( Not finished )
+</p>
+
+<p align="center">
+    <a href="https://p2p.mirotalk.com"><img src="./readme-src/404.png"></a>
     ( Not finished )
 </p>
 

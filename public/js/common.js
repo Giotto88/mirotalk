@@ -230,13 +230,7 @@ function joinRoom() {
 }
 
 function adultContent() {
-    if (
-        confirm(
-            '18+ WARNING! ADULTS ONLY!\n\nExplicit material for viewing by adults 18 years of age or older. You must be at least 18 years old to access to this site!\n\nProceeding you are agree and confirm to have 18+ year.',
-        )
-    ) {
-        window.open('https://luvlounge.ca', '_blank');
-    }
+    // No Adult Content permitted nor sponsored links
 }
 
 // #########################################################
