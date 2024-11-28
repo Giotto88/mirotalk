@@ -16,6 +16,7 @@ Nota2: I file modificati per ora sono:
 
 - [Landing.html](./public/views/new_landing.html)
 - [PreJoin.html](./public/views/preJoin.html)
+- new_c_lient.html (Under dev)
 
 <hr />
 
@@ -25,6 +26,11 @@ Nota2: I file modificati per ora sono:
 
 <p align="center">
     <a href="https://p2p.mirotalk.com"><img src="./readme-src/preJoin.png"></a>
+</p>
+
+<p align="center">
+    <a href="https://p2p.mirotalk.com"><img src="./readme-src/new_client.png"></a>
+    ( Not finished )
 </p>
 
 
