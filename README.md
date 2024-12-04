@@ -21,14 +21,16 @@ Nota2: I file modificati/aggiunti per ora sono:
 
 File originali modificati
 - [x] 404.html
-- [ ] about.html
 - [ ] client.html
 - [x] landing.html
 - [ ] login.html
-- [ ] maintenance.html
+- [x] maintenance.html
 - [x] newcall.html -> [landing](./public/views/landing.html)
-- [ ] privacy.html
 - [ ] testStunTurn.html
+
+File che non verranno modificati
+- [ ] about.html
+- [ ] privacy.html
 
 <hr />
 
@@ -50,6 +52,9 @@ File originali modificati
     ( Not finished )
 </p>
 
+<p align="center">
+    <a href="https://p2p.mirotalk.com"><img src="./readme-src/maintenance.png"></a>
+</p>
 
 <hr />
 
