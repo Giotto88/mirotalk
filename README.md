@@ -23,7 +23,7 @@ File originali modificati
 - [x] 404.html
 - [ ] client.html
 - [x] landing.html
-- [ ] login.html
+- [x] login.html
 - [x] maintenance.html
 - [x] newcall.html -> [landing](./public/views/landing.html)
 - [ ] testStunTurn.html
@@ -54,6 +54,10 @@ File che non verranno modificati
 
 <p align="center">
     <a href="https://p2p.mirotalk.com"><img src="./readme-src/maintenance.png"></a>
+</p>
+
+<p align="center">
+    <a href="https://p2p.mirotalk.com"><img src="./readme-src/login.png"></a>
 </p>
 
 <hr />
